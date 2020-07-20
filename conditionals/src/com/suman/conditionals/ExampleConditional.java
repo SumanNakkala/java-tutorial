@@ -13,9 +13,44 @@ public class ExampleConditional {
 
         int marks = scanner.nextInt();
 
+        checkformarks(marks);
+
         // < 36 - fail
         // >=36 < 60 - first class
         // >60 - distinction
+
+        System.out.println(" Please enter a number of your choice ");
+
+        int num1 = scanner.nextInt();
+
+        System.out.println(" Please enter a number of your choice ");
+
+        int num2 = scanner.nextInt();
+
+        int total =add(num1,num2);
+        System.out.println(" The sum is "+ total);
+
+
+
+    }
+ // this method is used to add two numbers
+    public static int add(int one, int two) {
+
+        int result = one+two;
+
+        return  result;
+
+    }
+
+    public static int mul(int one, int two) {
+
+        int result = one*two;
+
+        return  result;
+
+    }
+
+    public static void checkformarks(int marks) {
 
         if (marks <  36)
         {
@@ -29,17 +64,6 @@ public class ExampleConditional {
 
             System.out.println("STUDENT HAS PASSED in  DISTINCTION");
         }
-
-
-        // Take 2 input numbers
-        // Take an operation as input ,  add , sub , mul
-
-
-
-
-
-
-
 
 
     }

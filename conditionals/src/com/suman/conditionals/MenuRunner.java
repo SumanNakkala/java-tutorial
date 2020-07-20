@@ -28,7 +28,7 @@ public class MenuRunner {
         System.out.println("Choice " + choice);
 
 
-        if (choice == 1) {
+        /*if (choice == 1) {
             System.out.println("Result " + (number1 + number2));
         } else if (choice == 2) {
             System.out.println("Result " + (number1 - number2));
@@ -38,15 +38,15 @@ public class MenuRunner {
             System.out.println("Result " + (number1 * number2));
         } else {
             System.out.println("Invalid Operation");
-        }
+        }*/
 
 
-        //performOperationUsingNestedIfElse(number1, number2, choice);
+        performOperationUsingNestedIfElse(number1, number2, choice);
     }
 
 
 
-   /* private static void performOperationUsingNestedIfElse(int number1, int number2, int choice) {
+   private static void performOperationUsingNestedIfElse(int number1, int number2, int choice) {
         if (choice == 1) {
             System.out.println("Result " + (number1 + number2));
         } else if (choice == 2) {
@@ -58,6 +58,6 @@ public class MenuRunner {
         } else {
             System.out.println("Invalid Operation");
         }
-    }*/
+    }
 
 }
