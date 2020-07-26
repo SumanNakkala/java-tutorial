@@ -20,7 +20,9 @@ public class MotorBikeRunner {
           honda.increaseSpeed(-110);
 
 
+        // encapsulation
 
+        // Abstraction - hiding the internal details.
 
 
         System.out.println(" The Speed of honda is " + honda.getSpeed());
