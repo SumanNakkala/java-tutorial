@@ -28,7 +28,7 @@ public class ArrrayComparision {
 
         // HOME WORK
 
-        String days [] = {"sunday", "monday",}
+       // String days [] = {"sunday", "monday"}
 
         //  OUTPUT - print the day with more charecters
 
