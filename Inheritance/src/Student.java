@@ -12,6 +12,26 @@ public class Student  extends Person{
         this.department = department;
     }
 
+    public Student(){
+
+        //System.out.printf("Check point 1");
+        super();
+        System.out.println(" Hi I am subclass - Student Constructor");
+
+    }
+
+    public Student (String name,int rollNumber){
+
+        super(name);
+        this.rollNumber= rollNumber;
+    }
+
+    public Student (String name,String adress){
+
+        super(name,adress);
+    }
+
+
     public int getRollNumber() {
         return rollNumber;
     }
@@ -20,12 +40,13 @@ public class Student  extends Person{
         this.rollNumber = rollNumber;
     }
 
-/*    @Override
+    @Override
     public String toString() {
         return "Student{" +
+                "name='" + super.name+ '\'' +
                 "age='" + super.age+ '\'' +
                 "department='" + department + '\'' +
                 ", rollNumber=" + rollNumber +
                 '}';
-    }*/
+    }
 }
