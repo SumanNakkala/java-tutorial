@@ -33,6 +33,11 @@ public class Tester {
         Student s2 = new Student("phsni","AZ");
 
 
+        if( s instanceof  Student){
+            System.out.println(" This is an instace of Student ");
+        }
+
+
 /*
         Student s = new Student();
 
