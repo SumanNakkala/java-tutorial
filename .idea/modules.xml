@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/abstarct-class/abstarct-class.iml" filepath="$PROJECT_DIR$/abstarct-class/abstarct-class.iml" />
       <module fileurl="file://$PROJECT_DIR$/array/array.iml" filepath="$PROJECT_DIR$/array/array.iml" />
       <module fileurl="file://$PROJECT_DIR$/conditionals/conditionals.iml" filepath="$PROJECT_DIR$/conditionals/conditionals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interfaces/interfaces.iml" filepath="$PROJECT_DIR$/interfaces/interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java-tutorial.iml" filepath="$PROJECT_DIR$/.idea/java-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/objectCompo/objectCompo.iml" filepath="$PROJECT_DIR$/objectCompo/objectCompo.iml" />
       <module fileurl="file://$PROJECT_DIR$/oops/oops.iml" filepath="$PROJECT_DIR$/oops/oops.iml" />
