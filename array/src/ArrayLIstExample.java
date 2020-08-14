@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class ArrayLIstExample {
 
@@ -6,31 +8,41 @@ public class ArrayLIstExample {
     public static void main(String[] args) {
 
 
-        ArrayList myList = new ArrayList();
+        List<String> animals = new ArrayList<>();
+        animals.add("tiger");
+        animals.add("cat");
+        animals.add("rat");
 
-        myList.add("Suman");
-        myList.add("Phani");
-        myList.add(44);
-        myList.add(87.98f);
+        /*for(int i =0 ;i<animals.size();i++){
 
+            System.out.println(animals.get(i));
+        }*/
 
-        System.out.println("myList"+ myList);
+        for (String animal : animals){
 
+            if(animal.endsWith("at"))
+            {
+                animals.remove(animal);
+            }
 
-        myList.remove(3);
+        }
 
-        System.out.println("myList"+ myList);
+        System.out.println(animals);
 
+        Iterator<String> animalIterator = animals.iterator();
 
-        System.out.println("" + myList.get(2));
+        while(animalIterator.hasNext()){
 
-        ArrayList<String> stringList = new ArrayList(); // Only String will be allowed
-        stringList.add("Suman");
-        //stringList.add(21);
+            //System.out.println(animalIterator.next());
 
+            if(animalIterator.next().endsWith("at"))
+            {
+                animalIterator.remove();
+            }
 
+        }
 
-
+        System.out.println(animals);
 
 
     }

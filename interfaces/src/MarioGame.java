@@ -6,6 +6,8 @@ public class MarioGame implements  GamingConsole {
 
     }
 
+
+
     @Override
     public void down() {
         System.out.println(" MOve Mario down");
