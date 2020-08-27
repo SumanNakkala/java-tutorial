@@ -5,12 +5,27 @@ public class ThreadRunner {
     // 2 .Implementing the Runnable Interface
 
 
+    //  States of Threads
 
-    public static void main(String[] args) {
+    // 1/ NEW
+
+    // RUNNABLE
+
+    // RUNNING
+
+    // BLOCKED/ WAITING
+
+    // TERMINATED
+
+
+
+    public static void main(String[] args) throws InterruptedException {
 
 
         MyThread t1 = new MyThread();
           //  t1.run();// we should not call RUN
+        t1.setPriority(10);
+
         t1.start(); // to strat a thread
 
         MySecondThread t2 = new MySecondThread();
@@ -20,7 +35,11 @@ public class ThreadRunner {
 
         task2Thread.start();
 
+        // JOIN Method.
+        t1.join();
+       task2Thread.join();
 
+        System.out.println(" I AM HERE...!!");
 
 
         //Task3
