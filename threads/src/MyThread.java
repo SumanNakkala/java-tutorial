@@ -1,33 +1,29 @@
 class MyThread extends  Thread {
 
+    int value;
+
+    public MyThread(int i){
+        value=i;
+
+    }
+
     @Override
     public void run() {
 
 
 
         // Task1
-        System.out.println("TASK1 STARTED....!!");
-        for (int i = 100; i < 200; i++) {
+        System.out.println("TASK ....!!" + this.value + "STARTED") ;
+        for (int i = value*100; i < value*100+99; i++) {
 
             System.out.print(i + " ");
 
-            if(i==150){
-                try {
-
-                    //Causes the currently executing thread to sleep (temporarily cease execution) for the specified number of milliseconds,
-                    // subject to the precision and accuracy of system timers and schedulers.
-                    System.out.println("I AM SLEEPY NOW");
-                    Thread.sleep(5000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
 
         }
         //A hint to the scheduler that the current thread is willing to yield its current use of a processor.
         // The scheduler is free to ignore this hint.
         //Thread.yield();
-        System.out.println(" \n TASK1 ended....!!");
+        System.out.println("\n TASK ....!!" + this.value + "ENDED") ;
 
     }
 }

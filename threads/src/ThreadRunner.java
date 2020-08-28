@@ -22,7 +22,7 @@ public class ThreadRunner {
     public static void main(String[] args) throws InterruptedException {
 
 
-        MyThread t1 = new MyThread();
+        MyThread t1 = new MyThread(5);
           //  t1.run();// we should not call RUN
         t1.setPriority(10);
 

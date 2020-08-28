@@ -9,19 +9,11 @@ public class ExecutiveServiceExample {
 
 
         ExecutorService executorService = Executors.newFixedThreadPool(2);
+        executorService.execute(new MyThread(1));
+        executorService.execute(new MyThread(2));
+        executorService.execute(new MyThread(3));
+        executorService.execute(new MyThread(4));
 
-       // MyThread t1 = new MyThread();
-
-       // executorService.execute(t1);
-
-        executorService.execute(new MyThread());
-
-        MySecondThread t2 = new MySecondThread();
-
-
-        Thread task2Thread = new Thread(t2);
-
-        executorService.execute(task2Thread);
 
 
 
