@@ -7,19 +7,22 @@ public class FPRunner {
 
         List<String> animals = List.of("Lion", "Tiger", "Rat","Cat");
 
+        animals.stream()
+                .map(String::length).
+                forEach(System.out :: println);
+
+
+
+
         //printValues(animals);
        // printValuesWithFP(animals);
 
-        List<Integer> numbers = List.of(6,8,9,10,11,12,7,3,10,65);
-
-   numbers.stream().distinct().sorted().forEach(number -> System.out.println(number));
+        //List<Integer> numbers = List.of(6,8,9,10,11,12,7,3,10,65);
+        //numbers.stream().distinct().sorted().forEach(number -> System.out.println(number));
 
         //printNumbersFP(numbers);
         //sumofVlues(numbers);
         //umnofValuesFP(numbers);
-
-
-
 
     }
 
