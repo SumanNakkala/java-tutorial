@@ -36,8 +36,9 @@ public class FBInDepth {
 
     public static void main(String[] args) {
 
+         Predicate<Integer> integerPredicate = i -> i % 2 == 0;
         List.of(34,36,38,41 , 43, 55).stream()
-            .filter(i -> i%2==0).
+            .filter(integerPredicate).
                 map( n -> n *n)
             .forEach(FBInDepth::myPrint);
 
